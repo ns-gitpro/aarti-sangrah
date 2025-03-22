@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarti Sangrah - A Collection of Indian Devotional Hymns</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Aarti Sangrah</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#aartis">Aartis</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Sacred Aartis</h1>
+            <p>A collection of devotional hymns for various Hindu deities</p>
+            <a href="#aartis" class="btn-primary">Explore Aartis</a>
+        </div>
+    </section>
+
+    <section id="aartis" class="aartis-section">
+        <h2>Aartis Collection</h2>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for aarti or deity...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="vishnu">Vishnu</button>
+            <button class="filter-btn" data-category="shiva">Shiva</button>
+            <button class="filter-btn" data-category="devi">Devi</button>
+            <button class="filter-btn" data-category="ganesh">Ganesh</button>
+            <button class="filter-btn" data-category="other">Others</button>
+        </div>
+
+        <div class="aartis-container" id="aartisContainer">
+            <!-- Aartis will be populated here by JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About This Collection</h2>
+        <p>This website is dedicated to preserving and sharing the beautiful tradition of Aarti - devotional hymns that are sung in praise of Hindu deities. The collection includes aartis for various gods and goddesses, along with their meanings and significance.</p>
+        <p>Feel free to use these aartis for your personal prayers and devotional practices.</p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Aarti Sangrah. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="aartiModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="aartis.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
